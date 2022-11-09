@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="x">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+    <title>DinResa</title>
+
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <header class="top-navigation">
+        <!--header for making semantics correct, display none in css.-->
+        <h1 class="empty">empty</h1>
+        <nav class="navbar">
+            <!--img logotype input-->
+            <a href="index.html"><img id="logo-svg" src="static/logo.svg" alt="back to homepage"></a>
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" target="_self">Hem</a></li>
+                    <li><a href="bokning.html" target="_self">Bokning</a>
+                    </li>
+                    <li><a href="information.html" target="_self">Information</a></li>
+                    <li><a href="loggain.html" target="_self">Mina
+                        Sidor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item">
+                <article class="width-this section-block">
+                    <h1>Tillgänglighetsredogörelse för DinResa</h1>
+                    <section>
+                        <h2 class="empty">x</h2>
+                        <br>
+                        <p class="ingress">Här beskriver vi hur tillgänglig webbplatsens DinResa är och hur vi planerar att åtgärda brister. Här får du också information om hur du kan kontakta oss om du upptäcker brister.</p>
+                        <p> Vi vill att vår webbsida ska kunna användas, förstås och uppfattas på ett bra sätt av alla användare. DinResas webbsida är tillgänglighetsgjord så att du ska kunna besöka oss med olika hjälpmedel och få en bra upplevelse.<br></p>
+                        <p>Vår ambition är att uppnå som minst grundläggande tillgänglighet. Genom att följa de delar av standarden EN301549 och tillgänglighetskriterierna i WCAG(Web Content Accessibility Guidelines) på nivå AA, så säkerställer vi att vi
+                            jobbar i rätt riktning. Läs mer om WCAG och EN301549 <a href="#">här</a>.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Tillgänglighet på vår webbplats</h2>
+                        <p>För närvarande uppfyller webbsidan dessa krav. Bilder som visas har alt texter, saknar dom alt texter så är det för att bildernas syfte är endast dekorativa. Webbsidans struktur är kodad efter de nya HTML5 semantiska reglerna,
+                            det resulterar i att webbsidans olika element får tydliga roller för användaren.</p>
+                    </section>
+                    <section>
+                        <h3>Rubriker & struktur</h3>
+                        <p> Webbsidan har tydliga satta rubriker med rätt struktur i ordningen. Det läggs även stor vikt i att innehåll på webbsidan presenteras i en meningsfull ordning för användaren oavsett enhetsstorlek.</p>
+                        <h3>Flexibel layout med starka kontraster</h3>
+                        <p>Webbsidans layout är flexibel och anpassar sig efter besökarens enhetsfönster. Kontrast mellan text och bakgrund på samtliga element når upp till kraven. Det går att öka storleken på texten för användaren om så önskas. </p>
+                        <p> Om du som besökare föredrar mörkt tema, så finns det tillgängligt för dig som har den inställningen aktiverad i din enhet.</p>
+                    </section>
+
+                    <section>
+                        <h3>Navigering</h3>
+                        <p>Navigering på webbsidan sker i huvudmenyn och i sidfoten av webbsidan. Det finns även anpassade navigeringsmenyer för mindre skärmar. Vid navigering med tab-knappen så visas det tydligt en fyrkant runt det aktuella elementet. <br><br>Formulär
+                            går att navigera sig med hjälp av tangentbordet, checkboxar kryssar du i med hjälp av mellanslag. Formulärfält är tydligt markerade med rubriker och vilken typ av inmatning som förväntas. I övrigt fungerar det också bra att
+                            navigera sig med endast tangentbordet på webbsidan.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Förändring vid fokus</h3>
+                        <p>Vid fokusering av element som knappar, formulär och navigering så förändras utseendet för att förstärka att du integrerar med elementet. Dessa förändringar är för att förstärka vad som är i fokus. </p>
+                    </section>
+                    <section>
+                        <h3>Ge förlag på hur fel kan rättas till</h3>
+                        <p>
+                            Vid inmatning av obligatorisk information och du missar att fylla i något, så kommer en varning upp som berättar för dig vad som gått fel och hur du kan rätta till det. </p><br></section>
+
+                    <section>
+                        <h3>Brister vi är medvetna om</h3>
+                        <p>Funktionen ge förslag på hur fel kan rättas till är under utveckling och fungerar ej felfritt. Den finns tillgänglig på en del formulär men täcker inte hela användningsområdet för formulären i dagsläget. Sökfunktionen i sidfoten
+                            fungerar ej och har en icke konventionell placering.
+                    </section>
+                    <section>
+                        <h3>Kontakta oss om du upplever hinder</h3>
+                        <p>Kontakta oss om du upplever att det finns hinder eller svårigheter med att använda vår webbsida. Vi på DinResa kommer att försöka åtgärda problemen och se till att du får den digitala service du har rätt till.<br><br> Tryck
+                            <a href="kontakt.html">här</a> för att kontakta oss. </p>
+                    </section>
+                    <section>
+                        <h3>Kontakta tillsynsmyndigheten</h3>
+                        Om du upplever att du inte är nöjd med vårt arbete kring tillgänglighet så kan du vända dig till Myndigheten för digital förvaltning(DIGG). Tryck <a href="https://www.digg.se/tdosanmalan">här</a> för att komma till DIGG.<br><br>                        Denna redogörelse uppdaterades 2021-12-28.
+                    </section>
+                </article>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <!--Footer design-->
+    <div class="footer-container">
+        <footer class="footer">
+            <section class="footer-heading footer-1">
+                <h2>Kontakt</h2>
+                <a href="kontakt.html"><strong class="fa fa-edit"
+                    style="font-size:1.5rem"></strong> Kontaktformulär</a>
+
+                <a href="mailto:DinResa@example.com"><strong class="fa fa-envelope-o"
+                    style="font-size:1.5rem"></strong> Maila oss</a>
+                <a href="tel:060-12345"><strong class="fa fa-phone-square" style="font-size:1.5rem"></strong> 060-12345</a>
+                <a href="https://goo.gl/maps/ACmbek6tUqqW8WDk6"><strong
+                    class="fa fa-map-pin" style="font-size:24px"></strong> Hemvägen
+                36<br>123 45 Sundsvall</a>
+            </section>
+            <section class="footer-heading footer-2">
+                <h2>Navigering</h2>
+                <a href="index.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Hem</a>
+                <a href="information.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Information</a>
+                <a href="loggain.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Mina Sidor</a>
+                <a href="bokning.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Bokning</a>
+                <a href="tillganglighetsredogorelse.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Tillgänglighetsredogörelse</a>
+
+            </section>
+            <section class="footer-email-form">
+                <h2>
+                    Sök</h2>
+                <form>
+                    <label class="empty" for="footer-email">x</label>
+                    <input type="search" placeholder="vad söker du?" id="footer-email">
+                    <label class="empty" for="footer-email-btn">x</label>
+                    <input type="submit" value="sök" id="footer-email-btn">
+                </form>
+
+            </section>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

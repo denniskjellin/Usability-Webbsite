@@ -1,0 +1,1105 @@
+            * {
+                font-family: 'Poppins', sans-serif;
+                padding: 0;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            
+            main {
+                min-height: 70%;
+                padding: 4rem .5rem;
+                max-width: 1200px;
+                background-color: rgb(255, 255, 255);
+            }
+            
+            body {
+                line-height: 1.6;
+            }
+            
+            p {
+                margin: 0 0 1rem;
+            }
+            
+            .p-link {
+                text-decoration: underline;
+            }
+            
+            .p-center {
+                text-align: center;
+            }
+            
+            .section-block {
+                border-radius: 5px;
+                padding: .5rem 2rem 3rem 2rem;
+                background-color: #f1f1f1;
+            }
+            
+            .flexbox-container.mypages {
+                background-color: #f1f1f1;
+                border-radius: 5px;
+                margin: 1rem 0rem 1rem 0rem;
+            }
+            /* Paragraf to symbolise a clickable link */
+            
+            .p-hover {
+                border-style: solid;
+                border: black;
+                text-decoration: underline;
+            }
+            
+            .p-hover:hover {
+                color: #0a4eaf;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+            }
+            /* TITLE STYLES h1,h2,h3..*/
+            
+            .h1bigger {
+                font-size: 2rem;
+            }
+            
+            .center-h1 {
+                text-align: center;
+            }
+            
+            .h1 {
+                font-size: 2rem;
+            }
+            
+            .h2bigger {
+                font-size: 2rem;
+            }
+            
+            .h2bigger.center {
+                text-align: center;
+            }
+            
+            .smalerh2 {
+                font-weight: 600;
+                font-size: larger;
+            }
+            /* heading ID, to hide headings from the user, but makes the semantics/validation correct. */
+            
+            .empty {
+                display: none;
+            }
+            
+            #logo-svg {
+                height: 3rem;
+                width: 100%;
+                margin: .5rem;
+                cursor: pointer;
+            }
+            
+            #logo-svg:hover {
+                transition: all 0.2s ease-in-out;
+                border-color: #F7931E;
+                border-bottom-style: solid;
+            }
+            /* NAVBAR SETTINGS */
+            
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #0A4EAF;
+            }
+            /* CONTACT FORM*/
+            
+            input[type=email],
+            select,
+            textarea {
+                width: 100%;
+                /* Full width */
+                padding: .8rem;
+                /* Some padding */
+                border: 1px solid #ccc;
+                /* Gray border */
+                border-radius: 4px;
+                /* Rounded borders */
+                box-sizing: border-box;
+                /* Make sure that padding and width stays in place */
+                margin-top: .6rem;
+                /* Add a top margin */
+                margin-bottom: 1rem;
+                resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+            
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                /* Full width */
+                padding: .8rem;
+                /* Some padding */
+                border: 1px solid #ccc;
+                /* Gray border */
+                border-radius: 4px;
+                /* Rounded borders */
+                box-sizing: border-box;
+                /* Make sure that padding and width stays in place */
+                margin-top: .6rem;
+                /* Add a top margin */
+                margin-bottom: 1rem;
+                /* Bottom margin */
+                resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+            
+            #error {
+                color: rgb(158, 5, 5);
+                font-weight: bolder;
+            }
+            /* Style the submit button with a specific background color etc */
+            
+            input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: .8rem 1.2rem;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            
+            .index {
+                margin: 3rem -1.5rem;
+            }
+            /* When moving the mouse over the submit button, add a darker green color */
+            
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            /* Add a background color and some padding around the form */
+            
+            .container-contact {
+                margin: 1rem .5rem 1rem .5rem;
+                border-radius: 5px;
+                background-color: #f1f1f1;
+                padding: 1.4rem;
+            }
+            /* END CONTACT FORM*/
+            /* TOGGLE FORM ALT */
+            
+            #toggle-form {
+                display: none;
+                border: none;
+            }
+            
+            #toggle-ride-along {
+                border: none;
+                display: none;
+            }
+            
+            #toggle-load {
+                display: none;
+                border: none;
+            }
+            
+            #toggle-trip {
+                border: none;
+                display: none;
+            }
+            
+            #toggle-time {
+                border: none;
+                display: block;
+            }
+            /* END TOOGLE FORM ALT*/
+            /* styling the look on links nav*/
+            
+            .navbar .current {
+                background-color: #F7931E;
+                border-radius: .3rem;
+                color: black;
+            }
+            
+            .navbar-links ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            
+            .navbar-links li {
+                list-style: none;
+            }
+            
+            .navbar-links li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+                padding: 1rem;
+                display: block;
+            }
+            
+            .info-li {
+                margin-top: .3rem;
+            }
+            
+            .navbar-links li:hover {
+                border-bottom: #F7931E solid .2rem;
+                transition: all 0.4s ease-out;
+            }
+            /* Toggle Button styling, for Hamburger nav */
+            
+            .toggle-button {
+                position: absolute;
+                top: 1.5rem;
+                right: 1rem;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 1.8rem;
+                height: 1.5rem;
+            }
+            
+            .toggle-button .bar {
+                height: 0.2rem;
+                width: 100%;
+                background-color: #F7931E;
+                border-radius: 10px;
+            }
+            /* container cards, index page*/
+            
+            .container {
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+            
+            .container-item {
+                display: flex;
+            }
+            
+            .flexbox-container {
+                display: flex;
+            }
+            
+            .flexbox-item {
+                margin-bottom: 4rem;
+                flex-direction: row;
+            }
+            /* ingress card*/
+            
+            .ingress {
+                background-color: #f1f1f1;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            /* set max-width on element*/
+            
+            .width-this {
+                max-width: 65ch;
+            }
+            /* HERO HERO*/
+            
+            .flexbox-item.info1 {
+                margin-right: 3rem;
+                width: 50%;
+            }
+            
+            .flexbox-item.info2 {
+                width: 50%;
+            }
+            
+            .info-list li {
+                font-weight: 500;
+                margin-left: 2.5rem;
+            }
+            
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                margin-left: -1rem;
+                margin-right: -1rem;
+            }
+            /* used as a light transparent background for blocks of text in info section, to make something happen~*/
+            
+            .card {
+                width: 33.3333%;
+                color: black;
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                border: 2px solid transparent;
+            }
+            
+            .card>div {
+                background-color: #f1f1f1;
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+            }
+            
+            .card:visited {
+                color: black
+            }
+            
+            .card:hover {
+                border-style: solid;
+                border-color: black;
+                transition: all 0.2s ease-in-out;
+            }
+            /* ICONS*/
+            
+            .icon-mypage {
+                margin: auto;
+                width: 50%;
+                max-height: 13rem;
+                padding: 10px;
+            }
+            
+            .icon-svg {
+                max-width: 95px;
+                height: 10rem;
+                margin-bottom: -3rem;
+            }
+            
+            .check-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                max-width: 15rem;
+                margin-bottom: 2.5rem;
+            }
+            
+            .icon-booking-page {
+                max-width: 25rem;
+                margin: 1rem 0rem 1rem 0.5rem;
+            }
+            
+            .mobile-guy {
+                width: 50%;
+            }
+            
+            .screen-svg-ico {
+                width: 20rem;
+            }
+            /* Styling for list in info section*/
+            /* making the text in UL lighter*/
+            
+            .info-list li {
+                font-weight: lighter;
+                line-height: 1.6;
+            }
+            /* make checkbox larger, easier to see*/
+            
+            .checkbox {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            
+            .form-ico {
+                width: 2rem;
+                height: 1.5rem
+            }
+            
+            .profile-ico {
+                width: 9rem;
+            }
+            
+            .bag-ico {
+                width: 6rem;
+            }
+            
+            .logo-black {
+                margin-bottom: 7rem;
+            }
+            
+            .acc-ico {
+                max-width: 12rem;
+                max-height: 5rem;
+            }
+            /* HREF STYLED AS BUTTONS*/
+            
+            .change-trip {
+                border: solid black 2px;
+                padding: .5rem 3rem .5rem 3rem;
+                background-color: #F7931E;
+                text-decoration: none;
+                color: black;
+                border-radius: 5px;
+                font-weight: bold;
+                letter-spacing: .07rem;
+            }
+            
+            .change-trip.log {
+                background-color: #b4b4b4;
+                margin-left: 12rem;
+            }
+            
+            .change-trip.two {
+                background-color: #34aa63;
+                padding: .5rem .5rem .5rem .5rem;
+            }
+            
+            .change-trip:hover {
+                border: solid 3px black;
+                background-color: #0a4eaf;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            .abort-trip {
+                border: solid black 2px;
+                margin-left: 5rem;
+                padding: .5rem .4rem .5rem .4rem;
+                background-color: rgb(189, 39, 39);
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                font-weight: bold;
+                letter-spacing: .07rem;
+            }
+            
+            .abort-trip:hover {
+                background-color: red;
+                transition: all 0.5s ease-in-out;
+                border: solid 3px black;
+            }
+            
+            .log-in-btn {
+                border: solid 2px black;
+                padding: 0.8rem 5rem 0.8rem 5rem;
+                text-decoration: none;
+                border-radius: .3rem;
+                background-color: #F7931E;
+                color: black;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+                letter-spacing: .07rem;
+            }
+            
+            .log-in-btn:hover {
+                border: solid 3px black;
+                background-color: #0a4eaf;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            .boka-btn {
+                border: solid 2px black;
+                padding: 0.8rem 5rem 0.8rem 6rem;
+                text-decoration: none;
+                border-radius: .3rem;
+                background-color: #F7931E;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: .07rem;
+                height: 3.5rem;
+            }
+            
+            .boka-btn.sub {
+                margin: 0;
+                padding: 0;
+                width: 11rem;
+                padding-top: 0.6rem;
+                padding-bottom: 0.6rem;
+                border: solid 3px black;
+            }
+            
+            .boka-btn.green {
+                background-color: #34aa63;
+                letter-spacing: .07rem;
+            }
+            
+            .boka-btn.blue {
+                background-color: #b4b4b4;
+                letter-spacing: .07rem;
+                padding: 0.8rem 3rem 0.8rem 3rem;
+                float: right;
+            }
+            
+            .boka-btn.blue:hover {
+                border: solid 3px black;
+                background-color: #0a4eaf;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            .boka-btn:hover {
+                border: solid 3px black;
+                background-color: #0a4eaf;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            .href-btn {
+                background: #F7931E;
+                padding: .5rem 6rem .5rem 6rem;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                transition: all 0.3s ease-in-out;
+                font-size: 1.4rem;
+                text-decoration: none;
+                border-radius: 5px;
+                letter-spacing: .07rem;
+            }
+            
+            .href-btn:hover {
+                background-color: orangered;
+            }
+            
+            .abort-btn {
+                border: solid 3px black;
+                padding: 0.6rem 3rem 0.6rem 3rem;
+                margin-left: 3rem;
+                text-decoration: none;
+                border-radius: .3rem;
+                color: white;
+                font-weight: bold;
+                background-color: rgb(189, 39, 39);
+                letter-spacing: .07rem;
+                width: 10rem;
+                height: 3.5rem;
+            }
+            
+            .abort-btn:hover {
+                background-color: red;
+                transition: all 0.5s ease-in-out;
+                border: solid 3px black;
+            }
+            /* LOGIN PAGE*/
+            
+            .login-title {
+                color: black;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 3rem;
+                font-size: 2rem;
+                font-weight: normal;
+            }
+            
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.8rem;
+            }
+            
+            .input-group label {
+                font-weight: lighter;
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+            }
+            
+            .input-group input {
+                font-size: 1.5rem;
+                padding: .3rem .25rem;
+                border-radius: 4px;
+                width: 80%;
+            }
+            
+            .input-group input:focus {
+                transition: all 0.5s ease-in-out
+            }
+            
+            .input-group input:hover {
+                transition: all 0.5s ease-in-out;
+                border: solid 3px black;
+            }
+            /*FORM LAYOU*/
+            
+            .booking-form.login {
+                margin-top: 4rem;
+                width: 35rem;
+            }
+            
+            .booking-form {
+                background-color: #f1f1f1;
+                padding: 2rem;
+                border-radius: 8px;
+            }
+            
+            .form-item {
+                display: flex;
+            }
+            
+            .form-block {
+                margin-left: 3rem;
+            }
+            
+            .booking-form.login {
+                margin-top: 4rem;
+                width: 30rem;
+            }
+            
+            label {
+                font-weight: 500;
+            }
+            /* input styling*/
+            
+            .input-form {
+                width: 100%;
+                height: 2.8rem;
+                margin: 0.2rem 0rem 1rem 0rem;
+                border: solid 0.1rem rgb(187, 187, 187);
+                border-radius: 4px;
+            }
+            
+            .booking-form input:focus {
+                border: 4px solid black;
+            }
+            
+            .input-form.short {
+                min-width: 10rem;
+                width: 45%;
+                background-color: white;
+            }
+            
+            .input-form:hover {
+                transition: all 0.2s ease;
+                background-color: white;
+                border: solid 3px black;
+            }
+            
+            .input-form.medium {
+                padding-bottom: 4rem;
+                padding-top: 1rem;
+            }
+            /* HREF BTN/KLICK LINKS*/
+            
+            .href-btn {
+                background: #F7931E;
+                padding: .5rem 6rem .5rem 6rem;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                transition: all 0.3s ease-in-out;
+                font-size: 1.4rem;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            
+            .href-btn:hover {
+                background-color: orangered;
+            }
+            /* INFO FOLDER*/
+            
+            .expander {
+                margin: 0;
+                padding: 3% 0;
+                display: block;
+                list-style-type: none;
+                text-align: center;
+            }
+            
+            button {
+                position: relative;
+                max-width: 700px;
+                width: 100%;
+                padding: 1% 0 1% 2%;
+                background-color: #0a4eaf;
+                color: white;
+                border: none;
+                font-size: 1.2em;
+                text-align: left;
+                border-radius: 5px;
+            }
+            
+            button:hover {
+                background-color: #094496;
+                cursor: pointer;
+            }
+            
+            .textExpand {
+                max-width: 43rem;
+                margin: 1% auto;
+                text-align: left;
+                font-size: 1.1em;
+                line-height: 1.4em;
+                display: none;
+            }
+            
+            .arrow {
+                position: absolute;
+                font-size: 1.3em;
+                right: 2%;
+            }
+            /*FOOTER STYLING*/
+            
+            .footer-container {
+                background-color: #0a4eaf;
+                padding-bottom: 4rem;
+                padding: 5rem 0 2rem 0;
+            }
+            
+            .footer {
+                width: 100%;
+                height: 30vh;
+                background-color: #0a4eaf;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-bottom: 5rem;
+            }
+            
+            .footer-heading {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .footer-heading h2 {
+                margin-bottom: 1rem;
+            }
+            
+            .footer-heading.footer-1 a {
+                margin: 1rem 0rem 0rem 3rem;
+            }
+            
+            .footer-heading a {
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 0.5rem;
+                margin: 1rem -1rem 0rem 4rem;
+            }
+            
+            .footer-heading a:hover {
+                color: #F7931E;
+                transition: 0.3s ease-out;
+            }
+            
+            .footer-email-form h2 {
+                margin-bottom: 2rem;
+            }
+            
+            #footer-email {
+                width: 13rem;
+                height: 2.5rem;
+                border-radius: 4px;
+                outline: none;
+                border: none;
+                padding-left: 0.5rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            #footer-email::placeholder {
+                color: #b1b1b1;
+            }
+            
+            #footer-email-btn {
+                width: 6.25rem;
+                height: 2.5rem;
+                padding-bottom: 2.1rem;
+                padding-top: .5rem;
+                border-radius: 4px;
+                background-color: #000000;
+                outline: none;
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+            }
+            
+            #footer-email-btn:hover {
+                cursor: pointer;
+                background-color: #F7931E;
+                transition: all 0.4s ease-out;
+            }
+            
+            .desktop-only {
+                margin-left: 2rem;
+                width: 100%;
+            }
+            /* MEDIA QUERIES*/
+            
+            @media (prefers-color-scheme: dark) {
+                .navbar,
+                .footer,
+                .footer-container {
+                    background-color: #272727;
+                }
+                body {
+                    background-color: #414141;
+                }
+                main {
+                    background-color: rgb(165, 165, 165);
+                }
+                .cards {
+                    background-color: #272727;
+                }
+                .booking-form {
+                    background-color: #616161;
+                    color: white;
+                }
+                .input-form {
+                    background-color: rgb(206, 206, 206);
+                }
+                #date-go,
+                #go-time {
+                    background-color: rgb(206, 206, 206);
+                }
+                #btn1,
+                #btn2,
+                #btn3,
+                #btn4,
+                #btn5,
+                #btn6,
+                #btn7 {
+                    background-color: #646464;
+                }
+            }
+            
+            @media only screen and (max-width: 769px) {
+                /* NAVBAR SEETINGS*/
+                .toggle-button {
+                    display: flex;
+                }
+                .navbar-links {
+                    width: 100%;
+                    display: none;
+                }
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .navbar-links ul {
+                    width: 100%;
+                    flex-direction: column;
+                }
+                .navbar-links li {
+                    text-align: center;
+                }
+                .navbar-links li a {
+                    padding: .5rem 1rem;
+                }
+                .navbar-links.active {
+                    display: flex;
+                }
+                .boka-btn.sub {
+                    margin: 0;
+                    padding: 0;
+                    width: 9rem;
+                    padding-top: 0.6rem;
+                    padding-bottom: 0.6rem;
+                    border: solid 3px black;
+                }
+                .abort-btn {
+                    border: solid 3px black;
+                    padding: 0.7rem 1.5rem 2.5rem 1.5rem;
+                    margin-left: 2rem;
+                    width: 7.5rem;
+                    height: 3.5rem;
+                }
+                .desktop-only {
+                    display: none;
+                }
+            }
+            
+            @media only screen and (min-width: 481px) and (max-width: 1023px) and (orientation:landscape) {
+                /* For landscape layouts only */
+                .footer {
+                    height: 114vh;
+                }
+            }
+            
+            @media only screen and (max-width: 767px) {
+                /* NAVBAR SEETINGS*/
+                .toggle-button {
+                    display: flex;
+                }
+                .navbar-links {
+                    width: 100%;
+                    display: none;
+                }
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .navbar-links ul {
+                    width: 100%;
+                    flex-direction: column;
+                }
+                .navbar-links li {
+                    text-align: center;
+                }
+                .navbar-links li a {
+                    padding: .5rem 1rem;
+                }
+                .navbar-links.active {
+                    display: flex;
+                }
+                /*FOOTER SETTINGS*/
+                .container-cards-index {
+                    flex-direction: column;
+                }
+                /* SVG ICONS*/
+                .icon-svg {
+                    height: 3rem;
+                    margin-bottom: -1rem;
+                }
+                .card {
+                    margin: .5rem;
+                    padding: 1rem 0rem 1rem 0rem;
+                    width: 98%;
+                }
+                /* HIDE FROM MOBILE */
+                .desktop-only {
+                    display: none;
+                }
+                .container-item {
+                    flex-direction: column;
+                }
+                .flexbox-container {
+                    flex-direction: column;
+                }
+                .flexbox-item.info1 {
+                    width: 100%;
+                }
+                .flexbox-item.info2 {
+                    width: 100%;
+                }
+                .boka-btn {
+                    padding: 0.8rem 3.5rem 0.8rem 3.5rem;
+                }
+                .abort-btn {
+                    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+                    margin-left: 2rem;
+                    width: 5rem;
+                }
+                .hide-mobile {
+                    display: none;
+                }
+                .form-block {
+                    margin-left: 0;
+                }
+            }
+            
+            @media only screen and (max-width: 469px) {
+                #footer-email-btn {
+                    width: 25%;
+                }
+                #footer-email {
+                    width: 70%;
+                }
+                .footer-email-form {
+                    margin-top: 3rem;
+                    margin-right: 1rem;
+                }
+                .footer-heading.footer-2 {
+                    margin: 0rem 0rem 0rem 2.4rem;
+                }
+                .card {
+                    width: 95%;
+                    margin-bottom: 1rem;
+                }
+                .footer {
+                    height: 42rem;
+                }
+                .h2bigger {
+                    font-size: 1.6rem;
+                }
+                .h2bigger.center {
+                    text-align: start;
+                }
+                .boka-btn.green {
+                    padding: 0.8rem 5rem 0.8rem 5rem;
+                }
+                .boka-btn.smal {
+                    padding: 0.8rem 5rem 0.8rem 5rem;
+                }
+                .abort-btn {
+                    padding: .6rem 5rem 0.8rem 1rem;
+                    margin-left: 3rem;
+                }
+                .input-form.short {
+                    min-width: 10rem;
+                    width: 100%;
+                }
+                .booking-form.login {
+                    margin-top: 4rem;
+                    width: 17rem;
+                }
+                .booking-form.login input {
+                    width: 100%;
+                    font-size: .9rem;
+                }
+                .log-in-btn {
+                    height: 3rem;
+                    font-size: 0.8rem;
+                }
+                .change-trip {
+                    padding: .5rem 1rem .5rem 1rem;
+                }
+                .abort-trip {
+                    padding: .5rem 1rem .5rem 1rem;
+                    margin-left: 2.5rem;
+                }
+                .h1bigger {
+                    font-size: 1.8rem;
+                }
+                h2 {
+                    font-size: 1.3rem;
+                }
+                .h3bigger {
+                    font-size: 1.3rem;
+                }
+                h3 {
+                    font-size: 1.3rem;
+                }
+            }
+            
+            @media only screen and (max-width: 414px) {
+                .booking-form.login {
+                    margin-top: 4rem;
+                    width: 21rem;
+                }
+                .change-trip.log {
+                    background-color: #b4b4b4;
+                    margin-left: 1rem;
+                    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+                }
+                .boka-btn {
+                    margin: 0;
+                    padding: 0;
+                    width: 10rem;
+                    padding-top: 0.6rem;
+                    padding-bottom: 0.6rem;
+                }
+                .abort-trip {
+                    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                }
+                .abort-btn {
+                    margin-left: 1.3rem;
+                    width: 7rem;
+                }
+                .boka-btn {
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                }
+            }
+            
+            @media only screen and (max-width: 321px) {
+                .booking-form.login {
+                    margin-top: 4rem;
+                    width: 18rem;
+                }
+                .boka-btn.sub {
+                    margin: 0;
+                    padding: 0;
+                    width: 7rem;
+                    padding-top: 0.6rem;
+                    padding-bottom: 0.6rem;
+                }
+                .log-in-btn {
+                    height: 3rem;
+                    font-size: 0.73rem;
+                }
+                .abort-trip {
+                    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                }
+                .abort-btn {
+                    margin-left: 1.3rem;
+                    width: 6rem;
+                }
+                .boka-btn.green {
+                    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+                }
+                .boka-btn.smal {
+                    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+                }
+                .change-trip {
+                    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+                }
+                .change-trip.log {
+                    display: none;
+                }
+            }

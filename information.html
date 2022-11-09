@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="x">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+    <title>Information</title>
+
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <header class="top-navigation">
+        <!--header for making semantics correct, display none in css.-->
+        <h1 class="empty">empty</h1>
+        <nav class="navbar">
+            <!--img logotype input-->
+            <a href="index.html"><img id="logo-svg" src="static/logo.svg" alt="back to homepage"></a>
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" target="_self">Hem</a></li>
+                    <li><a href="bokning.html" target="_self">Bokning</a>
+                    </li>
+                    <li><a class="current" href="information.html" target="_self">Information</a></li>
+                    <li><a href="loggain.html" target="_self">Mina
+                        Sidor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flexbox-container">
+            <div class="flexbox-item info1">
+                <article class="width-this section-block">
+                    <h1 class="empty">x</h1>
+                    <h1 class="h1bigger">Information</h1>
+                    <p class="ingress"><strong>Det finns krav som måste uppfyllas för
+                                att bli beviljad
+                                färdtjänst.<br> På denna sida finner du regler och
+                                villkor, som gäller för resor med
+                                DinResa inom Sundsvall & Timrå kommun.</strong></p><br>
+                    <h2>Färdtjänsttillstånd</h2>
+                    <p>
+                        Du behöver ett beviljat färdtjänsttillstånd för att kunna boka en resa med oss. <br><br>Ditt ID på ditt färdtjänsttillstånd används för att skapa en profil under Mina sidor. Där kopplar du samman ditt it med ditt personnummer.<br><br>                        För att ansöka om färdtjänsttillstånd skickar du in en ansökan hos din kommun. Notera att ditt färdtjänsttillstånd är personligt och får ej användas av andra.
+                    </p>
+
+                    <ul class="expander" aria-label="grundkrav för färdtjänsttillstånd">
+                        <li>
+                            <!--Aria-expended måste ändras till true med JS när article blir synlig-->
+                            <button class="expanderBtn" id="btn1" aria-expanded="false" aria-controls="sect1">Grundkraven för att ansöka om färdtjänst
+                                            <strong class="fas fa-chevron-down arrow"></strong></button>
+                            <section class="textExpand" id="sect1"><br>
+                                <h3>För att kunna få färdtjänst beviljad måste du uppfylla följande punkter</h3><br>
+                                <ul class="info-list">
+                                    <li class="info-li">Du ska ha stora svårigheter med att förflytta dig på egen hand
+                                    </li>
+                                    <li class="info-li">Du har svårigheter med att anpassa dig till kollektivtrafiken som erbjuds.</li>
+                                    <li class="info-li">Du måste vara skriven samt bosatt i den kommun du ansöker om färdtjänst.</li>
+                                    <li class="info-li">Funktionsnedsättningen anses bestående, samt att den funnits i minst 3 månader</li>
+                                    <li class="info-li">Om du håller på med rehabilitering så har du rätt till färdtjänst under den tiden om kollektivtrafiken behöver ersättas.
+                                    </li>
+                                </ul>
+                            </section><br><br>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+
+            <div class="flexbox-item info2">
+                <article class="section-block">
+                    <h2>Vanliga frågor & svar</h2>
+                    <ul class="expander" aria-label="frågor och svar">
+                        <li>
+                            <!--Aria-expended måste ändras till true med JS när article blir synlig-->
+                            <button class="expanderBtn" id="btn2" aria-expanded="false" aria-controls="sect2">Vad kostar det?
+                                <strong class="fas fa-chevron-down arrow"></strong></button>
+                            <section class="textExpand" id="sect2"><br>
+                                <h3 class="empty">x</h3>
+                                <p>
+                                    Medresenärer betalar samma kostnad som dig som har färdtjänst. Avgift för resan grundar sig på bussbiljett motsvarande avståndstaxa. <br><br> Vuxen: motsvarar 1.5 vuxen bussbiljett.
+                                    <br> Barn 0-19 år: motsvarar halv vuxen färdtjänstavgift.
+                                    <br> Ungdom 20-25 år: 75% av vuxen färdtjänstavgift.
+                                    <br>
+                                    <p>Beviljad ledsagare reser utan kostnad.</p>
+
+                            </section><br><br><br><br>
+                        </li>
+                        <li>
+                            <button class="expanderBtn" id="btn3" aria-expanded="false" aria-controls="sect3">Vad gäller vid bokning?
+                                 <strong class="fas fa-chevron-down arrow"></strong></button>
+                            <!--Här används aria-live=polite, skärmläsaren kommer läsa upp texten vid tillfälle-->
+                            <section class="textExpand" id="sect3" aria-live="polite"><br>
+                                <h3>Att tänka på vid bokning</h3><br>
+                                <p>När du bokar via hemsidan eller via telefon så vill vi att du:
+                                </p>
+
+                                <ul class="info-list">
+
+                                    <li class="info-li">Boka minst en timma före avresa.</li>
+                                    <li class="info-li">Tala om för oss om du har en tid att passa.</li>
+                                    <li class="info-li">Beställer returresan på en gång, om det går.</li>
+                                    <li class="info-li">Om du har rullstol eller rullator.</li>
+                                    <li class="info-li">Om du har med dig medresenärer</li>
+                                    <li class="info-li">Om du har några specifika önskemål.</li>
+
+                                </ul>
+                            </section><br><br><br><br>
+                        </li>
+                        <li>
+                            <button class="expanderBtn" id="btn4" aria-expanded="false" aria-controls="sect4">Kan jag avboka eller ändra min resa?
+                                <strong class="fas fa-chevron-down arrow"></strong></button>
+                            <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
+                            <section class="textExpand" id="sect4" aria-live="polite"><br>
+                                <h3>Avbokning eller ändring av resa</h3><br>
+                                <p>En bokad resa ska avbokas eller ändras
+                                    <strong>senast</strong> 30 minuter innan planerad avresa. <br><br>Avbokning eller ändrig sker under
+                                    <strong><a href="loggain.html">Mina
+                                            Sidor</a></strong>.
+                                </p>
+
+                            </section><br><br><br><br>
+                        </li>
+                        <li>
+                            <button class="expanderBtn" id="btn5" aria-expanded="false" aria-controls="sect5">Vilka tider kan jag resa? <strong
+                                    class="fas fa-chevron-down arrow"></strong></button>
+                            <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
+                            <section class="textExpand" id="sect5" aria-live="polite"><br>
+                                <h3>Restider</h3><br>
+                                <p>
+                                    Du kan resa med färdtjänst under samma tider som buss i stadstrafiken. Undantag julafton, nyårsafton och midsommarafton.
+                                    <br><br></p>
+
+                                <p>Måndag - torsdag klockan 05.00 - 23.00<br> Fredag klockan 05.00 - 02.15<br> Lördag klockan 06.00 - 02.15
+                                    <br></p>
+
+                                <p>Söndag och helgdag klockan 06.00 - 23.15<br> Julafton klockan 06.00 - 23.15<br> Nyårsafton och midsommarafton klockan 06.00 - 02.15<br><br> Med reservation för ändringar i gällande tidtabell.</p>
+
+                            </section><br><br><br><br>
+                        </li>
+                        <li>
+                            <button class="expanderBtn" id="btn6" aria-expanded="false" aria-controls="sect6">COVID-19 information <strong
+                                    class="fas fa-chevron-down arrow"></strong></button>
+                            <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
+                            <section class="textExpand" id="sect6" aria-live="polite"><br>
+                                <h3>Covid-19 säkerhetsåtgärder</h3><br>
+
+                                <p>
+                                    Vi på DinResa har utrustat alla bilar med handspritbehållare och plexiglas mellan chauför och resenär. Alla våra chauförer bär munnskydd och är symptomfria.
+                                </p><br>
+                                <h3>Att tänka på innan du nyttjar färdtjänst:</h3><br>
+                                <ul class="info-list">
+                                    <li class="info-li">Stanna hemma om du är sjuk.</li>
+                                    <li class="info-li">Tvätta händerna ofta.</li>
+                                    <li class="info-li">Nys eller hosta i armvecket.</li>
+                                    <li class="info-li">Undvik onödiga resor.</li>
+                                    <li class="info-li">Res ensam om du kan.</li>
+                                    <li class="info-li">Vi uppmuntrar användning av munskydd av passageraren under resan.</li>
+                                    <li>Följ folkhälsomyndighetens rekommendationer om COVID-19. </li>
+                                </ul>
+                            </section><br><br><br><br>
+                            <li>
+                                <button class="expanderBtn" id="btn7" aria-expanded="false" aria-controls="sect7">Vilka personuppgifter sparas? <strong
+                                    class="fas fa-chevron-down arrow"></strong></button>
+                                <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
+                                <section class="textExpand" id="sect7" aria-live="polite"><br>
+                                    <h3>Lagring av personuppgifter</h3><br>
+                                    <p>
+                                        De personuppgifter som samlas in är de uppgifter som du anger vid själva bokningen eller ansökan. Det kan också vara personuppgifter som inhämtats på annat sätt. <br><br>Uppgifterna som samlas in sparas enligt arkivlagen.
+                                        En del av personuppgifterna kan komma att lämnas ut till utförare av tjänsten, som taxibolag, resebyrå.
+                                        <br><br>Det är endast nödvändiga uppgifter för att utföra tjänsten som lämnas ut, till exempel namn, adress och telefonnummer.<br> Har du frågor om vilka uppgifter vi sparar så får du gärna kontakta oss genom att
+                                        klicka <a href="kontakt.html">här</a>.
+                                    </p>
+
+                                </section><br><br><br><br>
+                            </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+    <!--Footer design-->
+    <div class="footer-container">
+        <footer class="footer">
+            <section class="footer-heading footer-1">
+                <h2>Kontakt</h2>
+                <a href="kontakt.html"><strong class="fa fa-edit"
+                    style="font-size:1.5rem"></strong> Kontaktformulär</a>
+
+                <a href="mailto:DinResa@example.com"><strong class="fa fa-envelope-o"
+                    style="font-size:1.5rem"></strong> Maila oss</a>
+                <a href="tel:060-12345"><strong class="fa fa-phone-square" style="font-size:1.5rem"></strong> 060-12345</a>
+                <a href="https://goo.gl/maps/ACmbek6tUqqW8WDk6"><strong
+                    class="fa fa-map-pin" style="font-size:24px"></strong> Hemvägen
+                36<br>123 45 Sundsvall</a>
+            </section>
+            <section class="footer-heading footer-2">
+                <h2>Navigering</h2>
+                <a href="index.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Hem</a>
+                <a class="current" href="information.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Information</a>
+                <a href="loggain.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Mina Sidor</a>
+                <a href="bokning.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Bokning</a>
+                <a href="tillganglighetsredogorelse.html"><strong class="fa fa-angle-right" style="font-size:1.5rem"></strong> &#160;Tillgänglighetsredogörelse</a>
+
+            </section>
+            <section class="footer-email-form">
+                <h2>
+                    Sök</h2>
+                <form>
+                    <label class="empty" for="footer-email">x</label>
+                    <input type="search" placeholder="vad söker du?" id="footer-email">
+                    <label class="empty" for="footer-email-btn">x</label>
+                    <input type="submit" value="sök" id="footer-email-btn">
+                </form>
+
+            </section>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/f001f8c4bf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

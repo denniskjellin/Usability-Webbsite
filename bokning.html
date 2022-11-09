@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="x">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+    <title>bokning</title>
+
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <header class="top-navigation">
+        <!--header for making semantics correct, display none in css.-->
+        <h1 class="empty">empty</h1>
+        <nav class="navbar">
+            <!--img logotype input-->
+            <a href="index.html"><img id="logo-svg" src="static/logo.svg" alt="back to homepage"></a>
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" target="_self">Hem</a></li>
+                    <li><a class="current" href="bokning.html" target="_self">Bokning</a>
+                    </li>
+                    <li><a href="information.html" target="_self">Information</a></li>
+                    <li><a href="loggain.html" target="_self">Mina
+                            Sidor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="flexbox-container">
+            <div class="flexbox-item width-this">
+                <article>
+                    <h1 class="h1bigger">Bokning</h1>
+                    <section>
+                        <h2 class="empty">x</h2>
+                        <p>
+                            Fyll i alternativen nedan för att skräddarsy din bokning efter just dina behov. Vänligen ange vilka hjälpmedel som ska lastas ombord samt eventuella medresenärer.
+                        </p>
+                    </section>
+                    <section class="hide-mobile">
+                        <h2>Vi finns för dig</h2>
+                        <p>
+                            För extra assistans eller för andra önskemål,<br> vänligen ange dessa i textrutan
+                            <strong>Övrig
+                                information</strong>.
+                        </p>
+                        <img class="icon-booking-page" src="icons/vifinns.svg" alt="">
+                    </section>
+
+                    <section>
+                        <h2>Återkommande resor</h2>
+                        <p>För dig som reser ofta till samma ställe vid samma tidpunkt, så kan du göra bokningen till en återkommande resa. Perfekt för dig som pendlar till jobbet eller andra aktiviteter vid bestämda tider.</p>
+                        <p>För att resan ska räknas som återkommande så måste du åka till och från samma ställe, vid samma tidpunkt i <strong>minst tre
+                                veckor i rad</strong>.</p>
+                        <img class="icon-booking-page hide-mobile" src="icons/rerun.svg" alt="">
+                    </section>
+                    <section>
+                        <h2 class="h2bigger">Hantera bokning</h2>
+                        <p>Har du en bokning som du behöver ändra eller avboka så gör du det under Mina Sidor. Om du föredrar att boka, avboka eller ändra din resa över telefon, så går det bra att ringa till oss.<br> Telefon: <a href="tel:060-12345">060-12345</a>
+                        </p>
+                    </section>
+                </article>
+            </div>
+            <div class="flexbox-item form-block">
+                <h3 class="h2bigger">Bokningsformulär</h3><br>
+                <form id="booking" class="booking-form" action="completed.html" method="GET" autocomplete="on">
+                    <p> <strong>Fält markerade med * är obligatoriska och måste fyllas
+                            i.</strong></p><br>
+                    <img class="form-ico" src="icons/homead.svg" alt="">
+                    <label for="from"><img class="asterisk" src="/images/asterisk.svg"
+                            alt="obligatoriskt" width="8" height="8"> Adress
+                        upphämtning:</label><br>
+                    <input class="input-form" type="text" placeholder="vart vill du bli upphämtad?" id="from" name="from"><br>
+                    <img class="form-ico" src="icons/toad.svg" alt="">
+                    <label for="to"><img class="asterisk" src="/images/asterisk.svg"
+                            alt="obligatoriskt" height="8" width="8"> Adress
+                        destination:</label><br>
+                    <input class="input-form" type="text" placeholder=" vart vill du åka?" id="to" name="to"><br>
+                    <input class="checkbox" type="checkbox" id="now" name="now" value="now" onclick="showHideTime()">
+                    <label for="now"> Jag vill bli hämtad omgående.</label><br><br>
+                    <fieldset id="toggle-time">
+                        <legend></legend>
+                        <label for="date-go"><img class="asterisk"
+                                src="/images/asterisk.svg" alt="obligatoriskt" height="8"
+                                width="8">
+                            Datum för upphämtning:</label><br>
+                        <input class="input-form short" type="date" id="date-go" name="date-go"><br>
+                        <label for="go-time"><img class="asterisk"
+                                src="/images/asterisk.svg" alt="obligatoriskt" height="8"
+                                width="8">
+                            Tid för upphämtning:</label><br>
+                        <input class="input-form time short" type="time" id="go-time" name="go-time"><br>
+                    </fieldset>
+                    <input class="checkbox" type="checkbox" id="back-checkbox" name="back-checkbox" onclick="showHideForm()" value="back-checkbox">
+                    <label for="back-checkbox">Ange returresa:</label><br><br>
+
+                    <fieldset id="toggle-form">
+                        <legend></legend>
+                        <label for="date-back"><img class="asterisk"
+                                src="/images/asterisk.svg" alt="obligatoriskt" height="8"
+                                width="8">
+                            Datum returresa:</label><br>
+                        <input class="input-form short" type="date" id="date-back" name="date-back"><br>
+                        <label for="back-time"><img class="asterisk"
+                                src="/images/asterisk.svg" alt="obligatoriskt" height="8"
+                                width="8">
+                            Tid returresan:</label><br>
+                        <input class="input-form short" type="time" id="back-time" name="back-time">
+                    </fieldset>
+                    <input class="checkbox" type="checkbox" id="ride-along-checkbox" name="ride-along-checkbox" value="ride-along-checkbox" onclick="showHideComp()">
+                    <label for="ride-along-checkbox">Lägg till medresenärer &
+                        husdjur</label><br><br>
+                    <fieldset id="toggle-ride-along">
+                        <legend></legend>
+                        <label for="quantity">Antal medresenärer:</label><br>
+                        <input class="input-form short" type="text" id="quantity" placeholder="antal..">
+                        <br> <input class="checkbox" type="checkbox" id="animal" name="animal">
+                        <label for="animal">Jag reser med ledarhund eller
+                            husdjur</label><br><br>
+                    </fieldset>
+                    <input class="checkbox" type="checkbox" id="load-item" name="load-item" onclick="showHideLoad()">
+                    <label for="load-item">Assistans med lastning av
+                        hjälpmedel</label><br><br>
+
+                    <fieldset id="toggle-load">
+                        <legend></legend>
+
+                        <label for="load-on">
+                            Jag vill lasta ombord:</label>
+                        <input class="input-form medium" type="text" id="load-on" placeholder="ange last, till exempel permobil, rullstol">
+                    </fieldset>
+
+                    <p><strong>Övrig information till föraren</strong></p>
+                    <p>
+                        Berätta för oss i text-rutan om du har några önskemål gällande din resa. Till exempel om du har en tid att passa, allergier eller ett extra stop på vägen. Ange om du behöver extra stöd med till exempel bärhjälp eller assistans ner för trappen.
+                    </p><br>
+                    <label for="request"><strong>Övrigt:</strong></label>
+                    <input class="input-form medium" type="text" id="request" name="request" placeholder="ange dina önskemål här..">
+                    <input class="checkbox" type="checkbox" id="trip-rerun" name="trip-rerun" onclick="showHideRerun()">
+                    <label for="trip-rerun">Boka som återkommande resa</label><br><br>
+                    <fieldset id="toggle-trip">
+                        <legend></legend>
+                        <label for="trip-back"><img class="asterisk"
+                                src="/images/asterisk.svg" alt="obligatoriskt" height="8"
+                                width="8">
+                            Välj vilken dag som resan ska upprepas:</label>
+                        <select id="trip-back" class="input-form" name="trip-back">
+                            <option value="dagligen">Måndag</option>
+                            <option value="veckovis">Tisdag</option>
+                            <option value="månadsvis">Onsdag</option>
+                            <option value="månadsvis">Torsdag</option>
+                            <option value="månadsvis">Fredag</option>
+                            <option value="månadsvis">Lödag</option>
+                            <option value="månadsvis">Söndag</option>
+                            <option value="månadsvis">Veckovis</option>
+                            <option value="månadsvis">Månadsvis</option>
+                            <option value="månadsvis">Anpassad.. (tanken är att det
+                                ska komma upp en kalender)
+                            </option>
+                        </select>
+                    </fieldset><br>
+                    <button class="boka-btn sub" onclick="checker()" value="submit" type="submit">Boka</button> <button class="abort-btn" value="reset" type="reset">Rensa</button>
+                    <br>
+                    <br>
+                    <section id="error">
+                        <h3 class="empty">x</h3>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer design-->
+    <div class="footer-container">
+        <footer class="footer">
+            <section class="footer-heading footer-1">
+                <h2>Kontakt</h2>
+                <a href="kontakt.html"><strong class="fa fa-edit"
+                        style="font-size:1.5rem"></strong> Kontaktformulär</a>
+
+                <a href="mailto:DinResa@example.com"><strong class="fa fa-envelope-o"
+                        style="font-size:1.5rem"></strong> Maila oss</a>
+                <a href="tel:060-12345"><strong class="fa fa-phone-square"
+                        style="font-size:1.5rem"></strong> 060-12345</a>
+                <a href="https://goo.gl/maps/ACmbek6tUqqW8WDk6"><strong
+                        class="fa fa-map-pin" style="font-size:1.5rem"></strong> Hemvägen
+                    36<br>123 45 Sundsvall</a>
+            </section>
+            <section class="footer-heading footer-2">
+                <h2>Navigering</h2>
+                <a href="index.html"><strong class="fa fa-angle-right"
+                        style="font-size:1.5rem"></strong> &#160;Hem</a>
+                <a href="information.html"><strong class="fa fa-angle-right"
+                        style="font-size:1.5rem"></strong> &#160;Information</a>
+                <a href="loggain.html"><strong class="fa fa-angle-right"
+                        style="font-size:1.5rem"></strong> &#160;Mina Sidor</a>
+                <a href="bokning.html"><strong class="fa fa-angle-right"
+                        style="font-size:1.5rem"></strong> &#160;Bokning</a>
+                <a href="tillganglighetsredogorelse.html"><strong
+                        class="fa fa-angle-right" style="font-size:1.5rem"></strong>
+                    &#160;Tillgänglighetsredogörelse</a>
+
+            </section>
+            <section class="footer-email-form">
+                <h2>
+                    Sök</h2>
+                <form>
+                    <label class="empty" for="footer-email">x</label>
+                    <input type="search" placeholder="vad söker du?" id="footer-email">
+                    <label class="empty" for="footer-email-btn">x</label>
+                    <input type="submit" value="sök" id="footer-email-btn">
+                </form>
+
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>
